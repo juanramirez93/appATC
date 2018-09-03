@@ -1,22 +1,17 @@
 package com.atc.reports;
 
+import com.atc.connection.Session;
+import com.atc.model.Empleado;
+import com.atc.util.StringsConstants;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.view.JasperViewer;
+
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.atc.connection.Session;
-import com.atc.model.Empleado;
-import com.atc.util.StringsConstants;
-
-import net.sf.jasperreports.engine.JRException;
-import net.sf.jasperreports.engine.JasperCompileManager;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.engine.JasperReport;
-import net.sf.jasperreports.view.JasperViewer;
 
 public class SegurosReports {
 

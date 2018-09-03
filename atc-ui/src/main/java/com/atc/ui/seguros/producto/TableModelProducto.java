@@ -1,12 +1,11 @@
 package com.atc.ui.seguros.producto;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
 import com.atc.model.Producto;
 import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TableModelProducto extends AbstractTableModel {
 

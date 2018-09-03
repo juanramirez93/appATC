@@ -1,19 +1,15 @@
 package com.atc.ui.empresa;
 
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.List;
-
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
 import com.atc.model.Empresa;
 import com.atc.service.empresa.SearchEmpresaService;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 public class SearchEmpresa extends JPanel implements ActionListener {
 

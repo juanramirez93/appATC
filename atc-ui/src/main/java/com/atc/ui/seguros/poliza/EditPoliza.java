@@ -1,24 +1,5 @@
 package com.atc.ui.seguros.poliza;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Date;
-
-import javax.swing.InputVerifier;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
 import com.atc.app.DialogAbstract;
 import com.atc.model.Poliza;
 import com.atc.model.RCE;
@@ -28,6 +9,13 @@ import com.atc.service.seguros.poliza.EditPolizaService;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
 import com.toedter.calendar.JDateChooser;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class EditPoliza extends DialogAbstract implements ActionListener {
 

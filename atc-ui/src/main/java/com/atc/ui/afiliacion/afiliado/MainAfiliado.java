@@ -1,22 +1,18 @@
 package com.atc.ui.afiliacion.afiliado;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.IOException;
-import java.util.List;
-
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import com.atc.app.FrameAbstract;
 import com.atc.model.Afiliacion;
 import com.atc.service.afiliacion.MainAfiliadoService;
 import com.atc.util.Exportar;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.util.List;
 
 public class MainAfiliado extends FrameAbstract implements ActionListener {
 

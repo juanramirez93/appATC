@@ -1,19 +1,15 @@
 package com.atc.ui.empleado;
 
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.List;
-
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
 import com.atc.model.Empleado;
 import com.atc.service.empleado.SearchEmpleadoService;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 public class SearchEmpleado extends JPanel implements ActionListener {
 

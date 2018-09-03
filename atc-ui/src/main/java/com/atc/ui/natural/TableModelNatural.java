@@ -1,13 +1,12 @@
 package com.atc.ui.natural;
 
+import com.atc.model.Natural;
+import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
-import com.atc.model.Natural;
-import com.atc.util.NumberConstants;
 
 public class TableModelNatural extends AbstractTableModel {
 
@@ -19,7 +18,7 @@ public class TableModelNatural extends AbstractTableModel {
 	private DecimalFormat formatID = new DecimalFormat("#,###");
 
 	private List<Natural> naturales;
-	private String[] columns = { "Cédula", "Nombres", "Apellidos" };
+	private String[] columns = { "Cï¿½dula", "Nombres", "Apellidos" };
 
 	public TableModelNatural() {
 		this.naturales = new ArrayList<Natural>();

@@ -1,17 +1,5 @@
 package com.atc.ui.afiliacion.afiliado.pagos;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-
 import com.atc.app.JPanelAbstract;
 import com.atc.model.Afiliacion;
 import com.atc.model.PagoAfiliado;
@@ -19,6 +7,12 @@ import com.atc.service.afiliacion.AddAfiliadoService;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
 import com.toedter.calendar.JDateChooser;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class DataPanelPagoAfiliacion extends JPanelAbstract{
 	

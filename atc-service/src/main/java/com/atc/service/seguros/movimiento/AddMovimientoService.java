@@ -1,12 +1,12 @@
 package com.atc.service.seguros.movimiento;
 
-import java.util.List;
-
 import com.atc.connection.MovimientoEM;
 import com.atc.connection.ProductoEM;
 import com.atc.connection.StockEM;
 import com.atc.model.Movimiento;
 import com.atc.model.Producto;
+
+import java.util.List;
 
 public class AddMovimientoService {
 	MovimientoEM movimientoEM;

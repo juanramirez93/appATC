@@ -1,10 +1,9 @@
 package com.atc.connection;
 
-import java.util.List;
+import com.atc.model.Producto;
 
 import javax.persistence.TypedQuery;
-
-import com.atc.model.Producto;
+import java.util.List;
 
 public class ProductoEM extends EM implements AbstractEntityManager<Producto> {
 

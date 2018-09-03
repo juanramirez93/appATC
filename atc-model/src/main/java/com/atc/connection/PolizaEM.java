@@ -1,10 +1,9 @@
 package com.atc.connection;
 
-import java.util.List;
+import com.atc.model.Poliza;
 
 import javax.persistence.TypedQuery;
-
-import com.atc.model.Poliza;
+import java.util.List;
 
 public class PolizaEM extends EM implements AbstractEntityManager<Poliza> {
 

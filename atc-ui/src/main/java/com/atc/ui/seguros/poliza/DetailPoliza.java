@@ -1,15 +1,5 @@
 package com.atc.ui.seguros.poliza;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JPanel;
-import javax.swing.JTextArea;
-
 import com.atc.app.DialogAbstract;
 import com.atc.model.Poliza;
 import com.atc.model.RCE;
@@ -17,6 +7,11 @@ import com.atc.model.Transporte;
 import com.atc.model.Vida;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class DetailPoliza extends DialogAbstract implements ActionListener {
 

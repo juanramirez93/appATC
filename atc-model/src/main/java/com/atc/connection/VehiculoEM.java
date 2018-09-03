@@ -1,10 +1,9 @@
 package com.atc.connection;
 
-import java.util.List;
+import com.atc.model.Vehiculo;
 
 import javax.persistence.TypedQuery;
-
-import com.atc.model.Vehiculo;
+import java.util.List;
 
 public class VehiculoEM extends EM implements AbstractEntityManager<Vehiculo> {
 

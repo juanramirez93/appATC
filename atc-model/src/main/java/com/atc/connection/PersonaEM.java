@@ -1,10 +1,9 @@
 package com.atc.connection;
 
-import java.util.List;
+import com.atc.model.Persona;
 
 import javax.persistence.TypedQuery;
-
-import com.atc.model.Persona;
+import java.util.List;
 
 public class PersonaEM extends EM implements AbstractEntityManager<Persona> {
 

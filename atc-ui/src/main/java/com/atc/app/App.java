@@ -1,10 +1,8 @@
 package com.atc.app;
 
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-
 import com.atc.ui.Auth;
+
+import javax.swing.*;
 
 public class App {
 

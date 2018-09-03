@@ -1,9 +1,9 @@
 package com.atc.service.afiliacion;
 
-import java.util.List;
-
 import com.atc.connection.AfiliacionEM;
 import com.atc.model.Afiliacion;
+
+import java.util.List;
 
 public class MainAfiliadoService {
 

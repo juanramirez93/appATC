@@ -1,20 +1,5 @@
 package com.atc.ui.afiliacion.afiliado;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.util.ArrayList;
-import java.util.Date;
-
-import javax.swing.InputVerifier;
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-
 import com.atc.app.JPanelAbstract;
 import com.atc.model.Afiliacion;
 import com.atc.model.Persona;
@@ -24,6 +9,11 @@ import com.atc.ui.natural.AddNatural;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
 import com.toedter.calendar.JDateChooser;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class DataPanelAfiliacion extends JPanelAbstract {
 

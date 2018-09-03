@@ -1,17 +1,12 @@
 package com.atc.ui.seguros.movimiento;
 
-import java.awt.BorderLayout;
-import java.util.List;
+import com.atc.model.Movimiento;
 
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.ListSelectionModel;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.TableColumnModel;
-
-import com.atc.model.Movimiento;
+import java.awt.*;
+import java.util.List;
 
 public class TableMovimiento extends JPanel {
 	/**

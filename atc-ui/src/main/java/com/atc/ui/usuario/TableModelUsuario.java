@@ -1,12 +1,11 @@
 package com.atc.ui.usuario;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
 import com.atc.model.Usuario;
 import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TableModelUsuario extends AbstractTableModel {
 
@@ -15,7 +14,7 @@ public class TableModelUsuario extends AbstractTableModel {
 	 */
 	private static final long serialVersionUID = 2043292488407193792L;
 	private List<Usuario> usuarios;
-	private String[] columns = { "Usuario", "Cédula", "Nombres" };
+	private String[] columns = { "Usuario", "Cï¿½dula", "Nombres" };
 
 	public TableModelUsuario() {
 		this.usuarios = new ArrayList<Usuario>();

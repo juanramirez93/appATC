@@ -1,15 +1,14 @@
 package com.atc.ui.afiliacion.afiliado;
 
+import com.atc.model.Afiliacion;
+import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
-import com.atc.model.Afiliacion;
-import com.atc.util.NumberConstants;
 
 public class TableModelAfiliado extends AbstractTableModel {
 
@@ -22,7 +21,7 @@ public class TableModelAfiliado extends AbstractTableModel {
 	protected DecimalFormat formatID = new DecimalFormat("#,###");
 
 	private List<Afiliacion> afiliaciones;
-	private String[] columns = { "Fecha", "Identificación", "Nombre", "Estado" };
+	private String[] columns = { "Fecha", "Identificaciï¿½n", "Nombre", "Estado" };
 
 	public TableModelAfiliado() {
 		this.afiliaciones = new ArrayList<Afiliacion>();

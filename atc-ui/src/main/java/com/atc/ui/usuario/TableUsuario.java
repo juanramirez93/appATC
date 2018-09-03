@@ -1,15 +1,11 @@
 package com.atc.ui.usuario;
 
-import java.awt.BorderLayout;
-import java.util.List;
-
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.ListSelectionModel;
-import javax.swing.border.EmptyBorder;
-
 import com.atc.model.Usuario;
+
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+import java.util.List;
 
 public class TableUsuario extends JPanel {
 	/**

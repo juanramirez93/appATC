@@ -1,12 +1,11 @@
 package com.atc.app;
 
-import java.awt.Toolkit;
-import java.text.SimpleDateFormat;
-
-import javax.swing.JFrame;
-
 import com.atc.connection.Session;
 import com.atc.model.Usuario;
+
+import javax.swing.*;
+import java.awt.*;
+import java.text.SimpleDateFormat;
 
 public class FrameAbstract extends JFrame {
 

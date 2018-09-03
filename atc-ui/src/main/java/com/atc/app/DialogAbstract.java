@@ -1,19 +1,14 @@
 package com.atc.app;
 
-import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
-
-import javax.swing.InputVerifier;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
-import javax.swing.text.JTextComponent;
-
 import com.atc.connection.Session;
 import com.atc.model.Usuario;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import javax.swing.text.JTextComponent;
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 
 public class DialogAbstract extends JDialog {
 

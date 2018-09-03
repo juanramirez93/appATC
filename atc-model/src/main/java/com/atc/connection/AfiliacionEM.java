@@ -1,13 +1,12 @@
 package com.atc.connection;
 
+import com.atc.model.Afiliacion;
+
+import javax.persistence.TypedQuery;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-
-import javax.persistence.TypedQuery;
-
-import com.atc.model.Afiliacion;
 
 public class AfiliacionEM extends EM implements AbstractEntityManager<Afiliacion> {
 

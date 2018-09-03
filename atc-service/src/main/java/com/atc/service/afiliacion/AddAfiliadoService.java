@@ -1,13 +1,13 @@
 package com.atc.service.afiliacion;
 
-import java.util.List;
-
 import com.atc.connection.AfiliacionEM;
 import com.atc.connection.EmpleadoEM;
 import com.atc.connection.PersonaEM;
 import com.atc.model.Afiliacion;
 import com.atc.model.Empleado;
 import com.atc.model.Persona;
+
+import java.util.List;
 
 public class AddAfiliadoService {
 	AfiliacionEM afiliacionEM;

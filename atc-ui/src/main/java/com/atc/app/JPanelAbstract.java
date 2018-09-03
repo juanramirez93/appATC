@@ -1,19 +1,14 @@
 package com.atc.app;
 
-import java.awt.Dimension;
-import java.text.DecimalFormat;
-
-import javax.swing.InputVerifier;
-import javax.swing.JComponent;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.text.JTextComponent;
-
 import com.atc.connection.Session;
 import com.atc.model.Usuario;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import javax.swing.text.JTextComponent;
+import java.awt.*;
+import java.text.DecimalFormat;
 
 public class JPanelAbstract extends JPanel {
 

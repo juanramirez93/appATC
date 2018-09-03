@@ -1,20 +1,16 @@
 package com.atc.ui.usuario;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.List;
-
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import com.atc.app.FrameAbstract;
 import com.atc.model.Usuario;
 import com.atc.service.usuario.UsuarioMainService;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 public class MainUsuario extends FrameAbstract implements ActionListener {
 

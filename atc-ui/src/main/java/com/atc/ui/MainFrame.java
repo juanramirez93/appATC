@@ -1,21 +1,5 @@
 package com.atc.ui;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import com.atc.app.Control;
 import com.atc.app.FrameAbstract;
 import com.atc.ui.afiliacion.afiliado.MainAfiliado;
@@ -32,6 +16,14 @@ import com.atc.ui.usuario.MainUsuario;
 import com.atc.util.GestorDocumentos;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainFrame extends FrameAbstract implements ActionListener {
 

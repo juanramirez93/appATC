@@ -1,10 +1,9 @@
 package com.atc.connection;
 
-import java.util.List;
+import com.atc.model.Empleado;
 
 import javax.persistence.TypedQuery;
-
-import com.atc.model.Empleado;
+import java.util.List;
 
 public class EmpleadoEM extends EM implements AbstractEntityManager<Empleado> {
 

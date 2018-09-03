@@ -1,9 +1,9 @@
 package com.atc.service.natural;
 
-import java.util.List;
-
 import com.atc.connection.NaturalEM;
 import com.atc.model.Natural;
+
+import java.util.List;
 
 public class MainNaturalService {
 

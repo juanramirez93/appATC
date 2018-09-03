@@ -1,24 +1,17 @@
 package com.atc.ui.seguros.reporte;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
 import com.atc.app.FrameAbstract;
 import com.atc.reports.SegurosReports;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
 import com.toedter.calendar.JMonthChooser;
 import com.toedter.calendar.JYearChooser;
-
 import net.sf.jasperreports.engine.JRException;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class VerReporte extends FrameAbstract implements ActionListener {
 

@@ -1,10 +1,9 @@
 package com.atc.connection;
 
-import java.util.List;
+import com.atc.model.Stock;
 
 import javax.persistence.TypedQuery;
-
-import com.atc.model.Stock;
+import java.util.List;
 
 public class StockEM extends EM implements AbstractEntityManager<Stock> {
 

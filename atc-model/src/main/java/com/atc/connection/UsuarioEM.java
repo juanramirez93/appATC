@@ -1,10 +1,9 @@
 package com.atc.connection;
 
-import java.util.List;
+import com.atc.model.Usuario;
 
 import javax.persistence.TypedQuery;
-
-import com.atc.model.Usuario;
+import java.util.List;
 
 public class UsuarioEM extends EM implements AbstractEntityManager<Usuario> {
 

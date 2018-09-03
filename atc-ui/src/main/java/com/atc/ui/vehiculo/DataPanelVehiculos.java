@@ -1,21 +1,13 @@
 package com.atc.ui.vehiculo;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.util.ArrayList;
-
-import javax.swing.InputVerifier;
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
-
 import com.atc.app.JPanelAbstract;
 import com.atc.service.vehiculo.VehiculoService;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
 
 public class DataPanelVehiculos extends JPanelAbstract {
 
@@ -67,7 +59,7 @@ public class DataPanelVehiculos extends JPanelAbstract {
 		
 		servicioLabel = new JLabel(StringsConstants.VEHICULO_SERVICIO);
 		String[] servicioStr = {
-				"Público",
+				"Pï¿½blico",
 				"Particular"
 				};
 		servicioField = new JComboBox<String>(servicioStr);

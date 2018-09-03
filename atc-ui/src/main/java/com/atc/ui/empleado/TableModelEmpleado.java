@@ -1,13 +1,12 @@
 package com.atc.ui.empleado;
 
+import com.atc.model.Empleado;
+import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
-import com.atc.model.Empleado;
-import com.atc.util.NumberConstants;
 
 public class TableModelEmpleado extends AbstractTableModel {
 
@@ -19,7 +18,7 @@ public class TableModelEmpleado extends AbstractTableModel {
 
 	private static final long serialVersionUID = -6506779577221369727L;
 	private List<Empleado> empleados;
-	private String[] columns = { "Cédula", "Nombres", "Apellidos" };
+	private String[] columns = { "Cï¿½dula", "Nombres", "Apellidos" };
 
 	public TableModelEmpleado() {
 		this.empleados = new ArrayList<Empleado>();

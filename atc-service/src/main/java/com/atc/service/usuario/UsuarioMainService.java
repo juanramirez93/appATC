@@ -1,9 +1,9 @@
 package com.atc.service.usuario;
 
-import java.util.List;
-
 import com.atc.connection.UsuarioEM;
 import com.atc.model.Usuario;
+
+import java.util.List;
 
 public class UsuarioMainService {
 

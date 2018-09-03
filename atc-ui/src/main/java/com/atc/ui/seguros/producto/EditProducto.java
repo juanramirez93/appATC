@@ -1,36 +1,18 @@
 package com.atc.ui.seguros.producto;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-
-import javax.swing.InputVerifier;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
 import com.atc.app.DialogAbstract;
-import com.atc.model.AAA;
-import com.atc.model.Camionera;
-import com.atc.model.Integral;
-import com.atc.model.Producto;
-import com.atc.model.RCEProduct;
-import com.atc.model.RCEyTransporte;
+import com.atc.model.*;
 import com.atc.service.seguros.producto.EditProductoService;
 import com.atc.ui.empresa.AddEmpresa;
 import com.atc.ui.seguros.poliza.AddPoliza;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class EditProducto extends DialogAbstract implements ActionListener {
 

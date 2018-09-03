@@ -1,8 +1,8 @@
 package com.atc.connection;
 
-import java.util.Date;
-
 import com.atc.model.Usuario;
+
+import java.util.Date;
 
 public enum Session {
 

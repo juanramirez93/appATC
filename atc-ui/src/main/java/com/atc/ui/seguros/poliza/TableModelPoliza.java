@@ -1,14 +1,13 @@
 package com.atc.ui.seguros.poliza;
 
+import com.atc.model.Poliza;
+import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
-import com.atc.model.Poliza;
-import com.atc.util.NumberConstants;
 
 public class TableModelPoliza extends AbstractTableModel {
 
@@ -20,7 +19,7 @@ public class TableModelPoliza extends AbstractTableModel {
 	private DecimalFormat formatMoney = new DecimalFormat("$#,###");
 
 	private List<Poliza> polizas;
-	private String[] columns = { "Número", "Tipo", "Inicio de Vigencia", "Fin de Vigencia", "Valor" };
+	private String[] columns = { "Nï¿½mero", "Tipo", "Inicio de Vigencia", "Fin de Vigencia", "Valor" };
 
 	public TableModelPoliza() {
 		this.polizas = new ArrayList<Poliza>();

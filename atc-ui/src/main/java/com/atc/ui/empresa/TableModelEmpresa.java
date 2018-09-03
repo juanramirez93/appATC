@@ -1,13 +1,12 @@
 package com.atc.ui.empresa;
 
+import com.atc.model.Empresa;
+import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
-import com.atc.model.Empresa;
-import com.atc.util.NumberConstants;
 
 public class TableModelEmpresa extends AbstractTableModel {
 
@@ -19,7 +18,7 @@ public class TableModelEmpresa extends AbstractTableModel {
 	private DecimalFormat formatID = new DecimalFormat("#,###");
 
 	private List<Empresa> empresas;
-	private String[] columns = { "Razón Social", "NIT" };
+	private String[] columns = { "Razï¿½n Social", "NIT" };
 
 	public TableModelEmpresa() {
 		this.empresas = new ArrayList<Empresa>();

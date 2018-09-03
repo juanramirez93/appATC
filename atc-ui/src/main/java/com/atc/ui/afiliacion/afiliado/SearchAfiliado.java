@@ -1,23 +1,17 @@
 package com.atc.ui.afiliacion.afiliado;
 
-import java.awt.FlowLayout;
+import com.atc.model.Afiliacion;
+import com.atc.service.afiliacion.SearchAfiliadoService;
+import com.atc.util.NumberConstants;
+import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
-import com.atc.model.Afiliacion;
-import com.atc.service.afiliacion.SearchAfiliadoService;
-import com.atc.util.NumberConstants;
-import com.atc.util.StringsConstants;
 
 public class SearchAfiliado extends JPanel implements ActionListener {
 

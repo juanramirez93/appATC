@@ -1,13 +1,12 @@
 package com.atc.ui.seguros.stock;
 
+import com.atc.model.Stock;
+import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
-import com.atc.model.Stock;
-import com.atc.util.NumberConstants;
 
 public class TableModelStock extends AbstractTableModel {
 

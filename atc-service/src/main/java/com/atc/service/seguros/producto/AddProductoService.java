@@ -1,22 +1,12 @@
 package com.atc.service.seguros.producto;
 
-import java.util.List;
-
 import com.atc.connection.EmpleadoEM;
 import com.atc.connection.EmpresaEM;
 import com.atc.connection.PolizaEM;
 import com.atc.connection.ProductoEM;
-import com.atc.model.AAA;
-import com.atc.model.Camionera;
-import com.atc.model.Empleado;
-import com.atc.model.Empresa;
-import com.atc.model.Integral;
-import com.atc.model.Poliza;
-import com.atc.model.RCE;
-import com.atc.model.RCEProduct;
-import com.atc.model.RCEyTransporte;
-import com.atc.model.Transporte;
-import com.atc.model.Vida;
+import com.atc.model.*;
+
+import java.util.List;
 
 public class AddProductoService {
 

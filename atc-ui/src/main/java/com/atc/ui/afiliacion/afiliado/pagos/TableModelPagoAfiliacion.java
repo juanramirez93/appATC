@@ -1,14 +1,13 @@
 package com.atc.ui.afiliacion.afiliado.pagos;
 
+import com.atc.model.PagoAfiliado;
+import com.atc.util.NumberConstants;
+
+import javax.swing.table.AbstractTableModel;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.table.AbstractTableModel;
-
-import com.atc.model.PagoAfiliado;
-import com.atc.util.NumberConstants;
 
 public class TableModelPagoAfiliacion extends AbstractTableModel {
 

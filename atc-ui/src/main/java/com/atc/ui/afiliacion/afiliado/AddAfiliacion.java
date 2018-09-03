@@ -1,17 +1,14 @@
 package com.atc.ui.afiliacion.afiliado;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JPanel;
-
 import com.atc.app.DialogAbstract;
 import com.atc.ui.afiliacion.afiliado.pagos.MainPagoAfiliacion;
 import com.atc.util.NumberConstants;
 import com.atc.util.StringsConstants;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class AddAfiliacion extends DialogAbstract implements ActionListener {
 

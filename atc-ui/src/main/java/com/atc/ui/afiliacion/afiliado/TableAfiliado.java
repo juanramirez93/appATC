@@ -1,17 +1,12 @@
 package com.atc.ui.afiliacion.afiliado;
 
-import java.awt.BorderLayout;
-import java.util.List;
+import com.atc.model.Afiliacion;
 
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.ListSelectionModel;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.TableColumnModel;
-
-import com.atc.model.Afiliacion;
+import java.awt.*;
+import java.util.List;
 
 public class TableAfiliado extends JPanel {
 	/**

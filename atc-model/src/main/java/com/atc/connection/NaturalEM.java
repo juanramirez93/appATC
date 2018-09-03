@@ -1,10 +1,9 @@
 package com.atc.connection;
 
-import java.util.List;
+import com.atc.model.Natural;
 
 import javax.persistence.TypedQuery;
-
-import com.atc.model.Natural;
+import java.util.List;
 
 public class NaturalEM extends EM implements AbstractEntityManager<Natural> {
 

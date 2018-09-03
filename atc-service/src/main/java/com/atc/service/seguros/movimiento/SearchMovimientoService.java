@@ -1,9 +1,9 @@
 package com.atc.service.seguros.movimiento;
 
-import java.util.List;
-
 import com.atc.connection.MovimientoEM;
 import com.atc.model.Movimiento;
+
+import java.util.List;
 
 public class SearchMovimientoService {
 
