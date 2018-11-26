@@ -1,6 +1,7 @@
 package com.atc.model;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "CLIENTE_EMPRESA")
@@ -136,4 +137,14 @@ public class Empresa extends Persona {
 		this.representante = representante;
 	}
 
+    @OneToMany(mappedBy = "empresa")
+    private Collection<Product> products;
+
+    public Collection<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(Collection<Product> product) {
+        this.products = product;
+    }
 }

@@ -72,7 +72,7 @@ public class Auth extends JFrame implements ActionListener {
 		buttonPanel = new JPanel();
 		userLabel = new JLabel(StringsConstants.AUTH_USER);
 		passwordLabel = new JLabel(StringsConstants.AUTH_PASSWORD);
-		user = new JComboBox<Usuario>(service.getAllUsuario());
+		user = new JComboBox<>(service.getAllUsuario());
 		password = new JPasswordField(NumberConstants.AUTH_LENGTH);
 
 	}
@@ -97,5 +97,10 @@ public class Auth extends JFrame implements ActionListener {
 	private void close() {
 		new Control().cerrarApp();
 		System.exit(0);
+	}
+
+	@Override
+	public void paintComponents(Graphics g) {
+		super.paintComponents(g);
 	}
 }

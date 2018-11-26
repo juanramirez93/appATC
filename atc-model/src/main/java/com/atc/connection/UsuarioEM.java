@@ -10,7 +10,7 @@ public class UsuarioEM extends EM implements AbstractEntityManager<Usuario> {
 	public List<Usuario> getAll() {
 		open();
 		TypedQuery<Usuario> query = EntityManagerHandler.INSTANCE.getEntityManager()
-				.createQuery("SELECT u FROM Usuario u ORDER BY user ASC", Usuario.class);
+				.createQuery("SELECT u FROM Usuario u ORDER BY u.user ASC", Usuario.class);
 		List<Usuario> usuarios = query.getResultList();
 		return usuarios;
 	}

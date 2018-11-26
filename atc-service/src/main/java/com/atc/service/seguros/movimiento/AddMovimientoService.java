@@ -38,4 +38,5 @@ public class AddMovimientoService {
 		stockEM.setNumeracion(selectedItem.getTipo(), cantidad);
 	}
 
+
 }

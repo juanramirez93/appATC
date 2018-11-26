@@ -16,8 +16,8 @@ public class TableModelMovimiento extends AbstractTableModel {
 	private SimpleDateFormat formatDate = new SimpleDateFormat("dd-MMM-yyyy");
 
 	private List<Movimiento> movimientos;
-	private String[] columns = { "Fecha", "Empresa", "Cantidad", "Producto", "Numeraciï¿½n", "Factura Vida", "Remisiï¿½n RCE",
-			"Remisiï¿½n Transportes" };
+	private String[] columns = { "Fecha", "Empresa", "Cantidad", "Producto", "Numeración", "Factura Vida", "Remisión RCE",
+			"Remisión Transportes" };
 
 	public TableModelMovimiento() {
 		this.movimientos = new ArrayList<Movimiento>();

@@ -31,7 +31,7 @@ public class Control {
 			long tiempo = leer();//
 			long res = restarTiempo(tiempo);
 			if (res < segundos) {
-				JOptionPane.showMessageDialog(null, "Error: La aplicacion ya esta en ejecuciÃ³n.");
+				JOptionPane.showMessageDialog(null, "Error: La aplicación ya esta en ejecución.");
 				return false;
 			} else {
 				programar_tarea();

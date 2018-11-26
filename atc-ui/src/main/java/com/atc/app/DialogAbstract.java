@@ -12,70 +12,71 @@ import java.text.SimpleDateFormat;
 
 public class DialogAbstract extends JDialog {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -3280937258565741968L;
-	protected SimpleDateFormat formatDate = new SimpleDateFormat("dd-MMM-yyyy");
-	protected DecimalFormat formatMoney = new DecimalFormat("$#,###");
-	protected DecimalFormat formatPercent = new DecimalFormat("#,##%");
-	protected DecimalFormat formatID = new DecimalFormat("#,###");
-	protected Usuario userSession;
-	
-	protected InputVerifier isNumber;
-	protected InputVerifier toUpper;
-	protected InputVerifier toLower;
+    /**
+     *
+     */
+    private static final long serialVersionUID = -3280937258565741968L;
+    protected SimpleDateFormat formatDate = new SimpleDateFormat("dd-MMM-yyyy");
+    protected DecimalFormat formatMoney = new DecimalFormat("$#,###");
+    protected DecimalFormat formatPercent = new DecimalFormat("#,##%");
+    protected DecimalFormat formatID = new DecimalFormat("#,###");
+    protected Usuario userSession;
 
+    public static final int LISTADO = 3;
+    public static final int DETALLE = 5;
+    public static final int EDITAR = 7;
+    public static final int AGREGAR = 11;
 
-	public DialogAbstract(FrameAbstract frame, String name) {
-		super(frame, name);
-		this.userSession = Session.INSTANCE.getUserSession();
-		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-		initializeValidations();
-		this.setAlwaysOnTop(true);
-	}
-	
-	private void initializeValidations() {
+    protected InputVerifier isNumber;
+    protected InputVerifier toUpper;
+    protected InputVerifier toLower;
 
-		isNumber = new InputVerifier() {
+    public DialogAbstract(FrameAbstract frame, String name) {
+        super(frame, name, false);
+        this.userSession = Session.INSTANCE.getUserSession();
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        initializeValidations();
+    }
 
-			@Override
-			public boolean verify(JComponent input) {
-				boolean verificado;
-				JTextField tf = (JTextField) input;
-				String cadena = tf.getText();
-				if (cadena.isEmpty() || NumberConstants.isNumber(cadena)) {
-					verificado = true;
-				} else {
-					JOptionPane.showMessageDialog(null, StringsConstants.ONLY_NUMBERS, StringsConstants.APP_NAME,
-							JOptionPane.ERROR_MESSAGE);
-					verificado = false;
-				}
-				if (!verificado) {
-					tf.setText("");
-				}
-				return verificado;
-			}
-		};
+    private void initializeValidations() {
+        isNumber = new InputVerifier() {
 
-		toUpper = new InputVerifier() {
+            @Override
+            public boolean verify(JComponent input) {
+                boolean verificado;
+                JTextField tf = (JTextField) input;
+                String cadena = tf.getText();
+                if(cadena.isEmpty() || NumberConstants.isNumber(cadena)) {
+                    verificado = true;
+                } else {
+                    JOptionPane.showMessageDialog(null, StringsConstants.ONLY_NUMBERS,
+                            StringsConstants.APP_NAME,
+                            JOptionPane.ERROR_MESSAGE);
+                    verificado = false;
+                }
+                if(!verificado) {
+                    tf.setText("");
+                }
+                return verificado;
+            }
+        };
+        toUpper = new InputVerifier() {
 
-			@Override
-			public boolean verify(JComponent input) {
-				JTextComponent in = (JTextComponent) input;
-				in.setText(in.getText().toUpperCase());
-				return true;
-			}
-		};
+            @Override
+            public boolean verify(JComponent input) {
+                JTextComponent in = (JTextComponent) input;
+                in.setText(in.getText().toUpperCase());
+                return true;
+            }
+        };
+        toLower = new InputVerifier() {
 
-		toLower = new InputVerifier() {
-
-			@Override
-			public boolean verify(JComponent input) {
-				JTextField in = (JTextField) input;
-				in.setText(in.getText().toLowerCase());
-				return true;
-			}
-		};
-	}
+            @Override
+            public boolean verify(JComponent input) {
+                JTextField in = (JTextField) input;
+                in.setText(in.getText().toLowerCase());
+                return true;
+            }
+        };
+    }
 }

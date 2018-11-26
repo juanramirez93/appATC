@@ -34,16 +34,16 @@ public class Exportar {
 		workbook = new HSSFWorkbook();
 		sheet = workbook.createSheet("afiliados");
 		rowhead = sheet.createRow((short) 0);
-		rowhead.createCell((short) 0).setCellValue("Fecha AfiliaciÃ³n");
+		rowhead.createCell((short) 0).setCellValue("Fecha Afiliación");
 		rowhead.createCell((short) 1).setCellValue("Estado");
 		rowhead.createCell((short) 2).setCellValue("Tipo Afiliado");
 		rowhead.createCell((short) 3).setCellValue("Identificacion");
 		rowhead.createCell((short) 4).setCellValue("Nombres");
 		rowhead.createCell((short) 5).setCellValue("Celular");
 		rowhead.createCell((short) 6).setCellValue("Ciudad");
-		rowhead.createCell((short) 7).setCellValue("VehÃ­culos de Carga");
+		rowhead.createCell((short) 7).setCellValue("Vehículos de Carga");
 		rowhead.createCell((short) 8).setCellValue("Placas/Carga");
-		rowhead.createCell((short) 9).setCellValue("VehÃ­culos particulares");
+		rowhead.createCell((short) 9).setCellValue("Vehículos particulares");
 		rowhead.createCell((short) 10).setCellValue("Placas/Particulares");
 		rowhead.createCell((short) 11).setCellValue("Fecha de Vencimiento");
 		

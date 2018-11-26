@@ -41,7 +41,7 @@ public class SearchMovimiento extends JPanel implements ActionListener {
 	private void initializeVariables() {
 		service = new SearchMovimientoService();
 		buscarLabel = new JLabel(StringsConstants.SEARCH);
-		buscarField = new JTextField(NumberConstants.ADDPOLIZA_FIELD);
+		buscarField = new JTextField(NumberConstants.POLICY_FIELD);
 		buscarButton = new JButton(StringsConstants.SEARCH);
 		buscarButton.addActionListener(this);
 		deleteButton = new JButton("X");

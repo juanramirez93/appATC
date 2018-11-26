@@ -101,11 +101,11 @@ public class AddStock extends DialogAbstract implements ActionListener {
 
 		fechaField = new JDateChooser(new Date());
 		productoField = new JComboBox<String>(
-				new String[] { "", "AAA", "Integral", "RCE y Transporte", "Camionera", "RCE" });
-		detalleField = new JComboBox<String>(new String[] { "", "AsignaciÃ³n", "DevoluciÃ³n" });
-		inicioField = new JTextField(NumberConstants.ADDSTOCK_FIELD);
+				new String[] { "", "AAA", "INTEGRAL", "RCE Y TRANSPORTE", "CAMIONERA", "RCE"  });
+		detalleField = new JComboBox<String>(new String[] { "", "Asignación", "Devolución" });
+		inicioField = new JTextField(NumberConstants.INVENTORY_FIELD);
 		inicioField.setInputVerifier(isNumber);
-		finField = new JTextField(NumberConstants.ADDSTOCK_FIELD);
+		finField = new JTextField(NumberConstants.INVENTORY_FIELD);
 		finField.setInputVerifier(isNumber);
 	}
 
@@ -155,7 +155,7 @@ public class AddStock extends DialogAbstract implements ActionListener {
 		Date fecha = fechaField.getDate();
 		if (productoField.getSelectedIndex() == 0 || detalleField.getSelectedIndex() == 0
 				|| inicioField.getText().isEmpty() || finField.getText().isEmpty()) {
-			JOptionPane.showMessageDialog(null, StringsConstants.DATOS_INCOMPLETOS_MESSAGE, StringsConstants.APP_NAME,
+			JOptionPane.showMessageDialog(null, StringsConstants.INCOMPLETE_DATA_MESSAGE, StringsConstants.APP_NAME,
 					JOptionPane.ERROR_MESSAGE);
 		}else {
 			Stock stock = new Stock();

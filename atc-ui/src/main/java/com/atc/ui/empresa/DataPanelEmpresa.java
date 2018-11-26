@@ -116,13 +116,13 @@ public class DataPanelEmpresa extends JPanelAbstract implements ActionListener {
 
 	private void initializeVariables() {
 		service = new EmpresaService();
-		nitLabel = new JLabel(StringsConstants.EMPRESA_NIT);
+		nitLabel = new JLabel(StringsConstants.NIT);
 		nit = new JTextField(NumberConstants.ADDCOMPANY_FIELD);
 		nit.setInputVerifier(isNumber);
 		nit.setInputVerifier(exist);
 		codigoLabel = new JLabel(StringsConstants.EMPRESA_DIGITO);
 		codigo = new JTextField(NumberConstants.ADDCOMPANY_FIELD);
-		razonSocialLabel = new JLabel(StringsConstants.EMPRESA_RAZON_SOCIAL);
+		razonSocialLabel = new JLabel(StringsConstants.RAZON_SOCIAL);
 		razonSocial = new JTextField(NumberConstants.ADDCOMPANY_FIELD);
 		razonSocial.setInputVerifier(toUpper);
 		siglasLabel = new JLabel(StringsConstants.EMPRESA_SIGLAS);
@@ -381,7 +381,7 @@ public class DataPanelEmpresa extends JPanelAbstract implements ActionListener {
 			service.addEmpresa(empresa);
 
 		} else {
-			JOptionPane.showMessageDialog(this, StringsConstants.DATOS_INCOMPLETOS_MESSAGE);
+			JOptionPane.showMessageDialog(this, StringsConstants.INCOMPLETE_DATA_MESSAGE);
 		}
 	}
 

@@ -10,7 +10,7 @@ public class EmpleadoEM extends EM implements AbstractEntityManager<Empleado> {
 	public List<Empleado> getAll() {
 		open();
 		TypedQuery<Empleado> query = EntityManagerHandler.INSTANCE.getEntityManager()
-				.createQuery("SELECT e FROM Empleado e ORDER BY cedula ASC", Empleado.class);
+				.createQuery("SELECT e FROM Empleado e ORDER BY e.cedula ASC", Empleado.class);
 		List<Empleado> empleado = query.getResultList();
 		return empleado;
 	}

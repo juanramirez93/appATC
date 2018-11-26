@@ -69,7 +69,7 @@ public class MainEmpresa extends FrameAbstract implements ActionListener {
 		this.atrasButton.addActionListener(this);
 		this.detallesButton = new JButton(StringsConstants.VER_DETALLE);
 		this.detallesButton.addActionListener(this);
-		this.editarButton = new JButton(StringsConstants.EDITAR);
+		this.editarButton = new JButton(StringsConstants.EDIT);
 		this.editarButton.addActionListener(this);
 		this.searchPanel = new SearchEmpresa(this);
 	}
@@ -86,7 +86,7 @@ public class MainEmpresa extends FrameAbstract implements ActionListener {
 				AddEmpresa addEmpresa = new AddEmpresa(this);
 				addEmpresa.setVisible(true);
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		} else if (event.getSource() == this.atrasButton) {
 			setVisible(false);
@@ -99,7 +99,7 @@ public class MainEmpresa extends FrameAbstract implements ActionListener {
 					JOptionPane.showMessageDialog(this, StringsConstants.SELECT_REGISTER);
 				}
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		} else if (event.getSource() == this.editarButton) {
 			if (userSession.getPermisos().getEmpresa() % EDITAR == 0) {
@@ -111,7 +111,7 @@ public class MainEmpresa extends FrameAbstract implements ActionListener {
 					JOptionPane.showMessageDialog(this, StringsConstants.SELECT_REGISTER);
 				}
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		}
 	}

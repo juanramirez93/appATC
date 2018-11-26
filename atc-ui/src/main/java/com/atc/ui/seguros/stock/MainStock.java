@@ -26,7 +26,7 @@ public class MainStock extends FrameAbstract implements ActionListener {
 	private JButton editButton;
 
 	public MainStock() {
-		super(StringsConstants.MAINSTOCK_TITULO);
+		super(StringsConstants.MAININVENTARY_TITULO);
 		initialize();
 		initializeVariables();
 		constructLayout();
@@ -63,7 +63,7 @@ public class MainStock extends FrameAbstract implements ActionListener {
 		this.atrasButton = new JButton(StringsConstants.BACK);
 		this.atrasButton.addActionListener(this);
 
-		this.editButton = new JButton(StringsConstants.EDITAR);
+		this.editButton = new JButton(StringsConstants.EDIT);
 		this.editButton.addActionListener(this);
 
 		this.ingresarButton = new JButton(StringsConstants.AGREGAR_STOCK);
@@ -72,7 +72,7 @@ public class MainStock extends FrameAbstract implements ActionListener {
 	}
 
 	private void initialize() {
-		setSize(NumberConstants.MAINSTOCK_WIDTH, NumberConstants.MAINSTOCK_HEIGHT);
+		setSize(NumberConstants.MAININVENTORY_WIDTH, NumberConstants.MAININVENTORY_HEIGHT);
 		setLocationRelativeTo(null);
 	}
 
@@ -82,7 +82,7 @@ public class MainStock extends FrameAbstract implements ActionListener {
 				AddStock addStock = new AddStock(this);
 				addStock.setVisible(true);
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		} else if (event.getSource() == this.atrasButton) {
 			setVisible(false);
@@ -92,7 +92,7 @@ public class MainStock extends FrameAbstract implements ActionListener {
 				EditStock editStock = new EditStock(this, stock);
 				editStock.setVisible(true);
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		}
 

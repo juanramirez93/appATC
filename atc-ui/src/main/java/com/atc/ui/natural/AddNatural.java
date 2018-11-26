@@ -245,7 +245,7 @@ public class AddNatural extends DialogAbstract implements ActionListener {
 			clean();
 			this.dispose();
 		} else {
-			JOptionPane.showMessageDialog(this, StringsConstants.DATOS_INCOMPLETOS_MESSAGE);
+			JOptionPane.showMessageDialog(this, StringsConstants.INCOMPLETE_DATA_MESSAGE);
 		}
 	}
 

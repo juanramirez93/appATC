@@ -8,140 +8,153 @@ import java.util.List;
 @Entity
 @Table(name = "AFILIACION")
 public class Afiliacion {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-	@Column(name = "ID_AFILIACION")
-	private Long id;
-	@OneToOne
-	@JoinColumn(name = "ID_PERSONA")
-	private Persona afiliado;
-	private Date fechaAfiliacion;
-	private long codigoCarnet;
-	private String estrato;
-	private String escolaridad;
-	@OneToMany(mappedBy = "afiliacion", cascade = CascadeType.ALL, orphanRemoval = true)
-	private List<PagoAfiliado> pagos = new ArrayList<PagoAfiliado>();
-	private Date ultimoPago;
-	private int vehiculosParticulares;
-	private int vehiculosCarga;
-	private String placasParticulares;
-	private String placasCarga;
-	private String tipoAfiliado;
-	
-	public Afiliacion() {
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @Column(name = "ID_AFILIACION")
+    private Long id;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ID_PERSONA")
+    private Persona afiliado;
+    private Date fechaAfiliacion;
+    private long codigoCarnet;
+    private String estrato;
+    private String escolaridad;
+    @OneToMany(mappedBy = "afiliacion", cascade = CascadeType.ALL, orphanRemoval = true,
+            fetch = FetchType.LAZY)
+    private List<PagoAfiliado> pagos = new ArrayList<PagoAfiliado>();
+    private Date ultimoPago;
+    private int vehiculosParticulares;
+    private int vehiculosCarga;
+    private String placasParticulares;
+    private String placasCarga;
+    private String tipoAfiliado;
 
-	public Long getId() {
-		return id;
-	}
+    public Afiliacion() {
+    }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public Persona getAfiliado() {
-		return afiliado;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public void setAfiliado(Persona afiliado) {
-		this.afiliado = afiliado;
-	}
+    public Persona getAfiliado() {
+        return afiliado;
+    }
 
-	public Date getFechaAfiliacion() {
-		return fechaAfiliacion;
-	}
+    public void setAfiliado(Persona afiliado) {
+        this.afiliado = afiliado;
+    }
 
-	public void setFechaAfiliacion(Date fechaAfiliacion) {
-		this.fechaAfiliacion = fechaAfiliacion;
-	}
+    public Date getFechaAfiliacion() {
+        return fechaAfiliacion;
+    }
 
-	public long getCodigoCarnet() {
-		return codigoCarnet;
-	}
+    public void setFechaAfiliacion(Date fechaAfiliacion) {
+        this.fechaAfiliacion = fechaAfiliacion;
+    }
 
-	public void setCodigoCarnet(long codigoCarnet) {
-		this.codigoCarnet = codigoCarnet;
-	}
+    public long getCodigoCarnet() {
+        return codigoCarnet;
+    }
 
-	public String getEstrato() {
-		return estrato;
-	}
+    public void setCodigoCarnet(long codigoCarnet) {
+        this.codigoCarnet = codigoCarnet;
+    }
 
-	public void setEstrato(String estrato) {
-		this.estrato = estrato;
-	}
+    public String getEstrato() {
+        return estrato;
+    }
 
-	public String getEscolaridad() {
-		return escolaridad;
-	}
+    public void setEstrato(String estrato) {
+        this.estrato = estrato;
+    }
 
-	public void setEscolaridad(String escolaridad) {
-		this.escolaridad = escolaridad;
-	}
+    public String getEscolaridad() {
+        return escolaridad;
+    }
 
-	public List<PagoAfiliado> getPagos() {
-		return pagos;
-	}
+    public void setEscolaridad(String escolaridad) {
+        this.escolaridad = escolaridad;
+    }
 
-	public void setPagos(List<PagoAfiliado> pagos) {
-		this.pagos = pagos;
-	}
+    public List<PagoAfiliado> getPagos() {
+        return pagos;
+    }
 
-	public void addPago(PagoAfiliado pago) {
-		pagos.add(pago);
-		pago.setAfiliacion(this);
-	}
+    public void setPagos(List<PagoAfiliado> pagos) {
+        this.pagos = pagos;
+    }
 
-	public void removePago(PagoAfiliado pago) {
-		pagos.remove(pago);
-		pago.setAfiliacion(null);
-	}
+    public void addPago(PagoAfiliado pago) {
+        pagos.add(pago);
+        pago.setAfiliacion(this);
+    }
 
-	public Date getUltimoPago() {
-		return ultimoPago;
-	}
+    public void removePago(PagoAfiliado pago) {
+        pagos.remove(pago);
+        pago.setAfiliacion(null);
+    }
 
-	public void setUltimoPago(Date ultimoPago) {
-		this.ultimoPago = ultimoPago;
-	}
+    public Date getUltimoPago() {
+        return ultimoPago;
+    }
 
-	public int getVehiculosParticulares() {
-		return vehiculosParticulares;
-	}
+    public void setUltimoPago(Date ultimoPago) {
+        this.ultimoPago = ultimoPago;
+    }
 
-	public void setVehiculosParticulares(int vehiculosParticulares) {
-		this.vehiculosParticulares = vehiculosParticulares;
-	}
+    public int getVehiculosParticulares() {
+        return vehiculosParticulares;
+    }
 
-	public int getVehiculosCarga() {
-		return vehiculosCarga;
-	}
+    public void setVehiculosParticulares(int vehiculosParticulares) {
+        this.vehiculosParticulares = vehiculosParticulares;
+    }
 
-	public void setVehiculosCarga(int vehiculosCarga) {
-		this.vehiculosCarga = vehiculosCarga;
-	}
+    public int getVehiculosCarga() {
+        return vehiculosCarga;
+    }
 
-	public String getPlacasParticulares() {
-		return placasParticulares;
-	}
+    public void setVehiculosCarga(int vehiculosCarga) {
+        this.vehiculosCarga = vehiculosCarga;
+    }
 
-	public void setPlacasParticulares(String placasParticulares) {
-		this.placasParticulares = placasParticulares;
-	}
+    public String getPlacasParticulares() {
+        return placasParticulares;
+    }
 
-	public String getPlacasCarga() {
-		return placasCarga;
-	}
+    public void setPlacasParticulares(String placasParticulares) {
+        this.placasParticulares = placasParticulares;
+    }
 
-	public void setPlacasCarga(String placasCarga) {
-		this.placasCarga = placasCarga;
-	}
+    public String getPlacasCarga() {
+        return placasCarga;
+    }
 
-	public String getTipoAfiliado() {
-		return tipoAfiliado;
-	}
+    public void setPlacasCarga(String placasCarga) {
+        this.placasCarga = placasCarga;
+    }
 
-	public void setTipoAfiliado(String tipoAfiliado) {
-		this.tipoAfiliado = tipoAfiliado;
-	}
+    public String getTipoAfiliado() {
+        return tipoAfiliado;
+    }
+
+    public void setTipoAfiliado(String tipoAfiliado) {
+        this.tipoAfiliado = tipoAfiliado;
+    }
+
+    public String getEstado() {
+        if(getUltimoPago() != null) {
+            if(getUltimoPago().before(new Date())) {
+                return "Inactivo";
+            } else {
+                return "Activo";
+            }
+        } else {
+            return "No hay pagos registrados";
+        }
+    }
 }

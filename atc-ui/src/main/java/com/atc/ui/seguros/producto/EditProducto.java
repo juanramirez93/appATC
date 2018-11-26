@@ -222,7 +222,7 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 							verificado = false;
 						}
 					} else {
-						int rta = JOptionPane.showConfirmDialog(null, StringsConstants.POLIZA_ISNT_EXIST,
+						int rta = JOptionPane.showConfirmDialog(null, StringsConstants.POLICY_ISNT_EXIST,
 								StringsConstants.APP_NAME, JOptionPane.OK_CANCEL_OPTION);
 						if (rta == 0) {
 							AddPoliza adPol = new AddPoliza(null);
@@ -263,7 +263,7 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 							verificado = false;
 						}
 					} else {
-						int rta = JOptionPane.showConfirmDialog(null, StringsConstants.POLIZA_ISNT_EXIST,
+						int rta = JOptionPane.showConfirmDialog(null, StringsConstants.POLICY_ISNT_EXIST,
 								StringsConstants.APP_NAME, JOptionPane.OK_CANCEL_OPTION);
 						if (rta == 0) {
 							AddPoliza adPol = new AddPoliza(null);
@@ -304,7 +304,7 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 							verificado = false;
 						}
 					} else {
-						int rta = JOptionPane.showConfirmDialog(null, StringsConstants.POLIZA_ISNT_EXIST,
+						int rta = JOptionPane.showConfirmDialog(null, StringsConstants.POLICY_ISNT_EXIST,
 								StringsConstants.APP_NAME, JOptionPane.OK_CANCEL_OPTION);
 						if (rta == 0) {
 							AddPoliza adPol = new AddPoliza(null);
@@ -557,7 +557,7 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 		setNoSet();
 		rceLabel = new JLabel(StringsConstants.PRODUCTO_RCE);
 		jLabelArray.add(rceLabel);
-		rceField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		rceField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		rceField.setInputVerifier(isRCE);
 		jComponentArray.add(rceField);
 
@@ -572,19 +572,19 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 		setNoSet();
 		vidaLabel = new JLabel(StringsConstants.PRODUCTO_VIDA);
 		jLabelArray.add(vidaLabel);
-		vidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		vidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		vidaField.setInputVerifier(isVida);
 		jComponentArray.add(vidaField);
 
-		valorVentaVidaLabel = new JLabel(StringsConstants.PRODUCTO_VENTA_VIDA);
+		valorVentaVidaLabel = new JLabel(StringsConstants.SELL_VIDA);
 		jLabelArray.add(valorVentaVidaLabel);
-		valorVentaVidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		valorVentaVidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		valorVentaVidaField.setInputVerifier(isNumber);
 		jComponentArray.add(valorVentaVidaField);
 
 		valorVentaUrbanosVidaLabel = new JLabel(StringsConstants.PRODUCTO_URBANO_VENTA_VIDA);
 		jLabelArray.add(valorVentaUrbanosVidaLabel);
-		valorVentaUrbanosVidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		valorVentaUrbanosVidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		valorVentaUrbanosVidaField.setInputVerifier(isNumber);
 		jComponentArray.add(valorVentaUrbanosVidaField);
 
@@ -598,13 +598,13 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 		setNoSet();
 		rceLabel = new JLabel(StringsConstants.PRODUCTO_RCE);
 		jLabelArray.add(rceLabel);
-		rceField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		rceField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		rceField.setInputVerifier(isRCE);
 		jComponentArray.add(rceField);
 
 		transporteLabel = new JLabel(StringsConstants.PRODUCTO_TRANSPORTE);
 		jLabelArray.add(transporteLabel);
-		transporteField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		transporteField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		transporteField.setInputVerifier(isTransporte);
 		jComponentArray.add(transporteField);
 
@@ -619,31 +619,31 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 		setNoSet();
 		rceLabel = new JLabel(StringsConstants.PRODUCTO_RCE);
 		jLabelArray.add(rceLabel);
-		rceField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		rceField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		rceField.setInputVerifier(isRCE);
 		jComponentArray.add(rceField);
 
 		transporteLabel = new JLabel(StringsConstants.PRODUCTO_TRANSPORTE);
 		jLabelArray.add(transporteLabel);
-		transporteField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		transporteField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		transporteField.setInputVerifier(isTransporte);
 		jComponentArray.add(transporteField);
 
 		vidaLabel = new JLabel(StringsConstants.PRODUCTO_VIDA);
 		jLabelArray.add(vidaLabel);
-		vidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		vidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		vidaField.setInputVerifier(isVida);
 		jComponentArray.add(vidaField);
 
-		valorVentaVidaLabel = new JLabel(StringsConstants.PRODUCTO_VENTA_VIDA);
+		valorVentaVidaLabel = new JLabel(StringsConstants.SELL_VIDA);
 		jLabelArray.add(valorVentaVidaLabel);
-		valorVentaVidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		valorVentaVidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		valorVentaVidaField.setInputVerifier(isNumber);
 		jComponentArray.add(valorVentaVidaField);
 
 		valorVentaUrbanosVidaLabel = new JLabel(StringsConstants.PRODUCTO_URBANO_VENTA_VIDA);
 		jLabelArray.add(valorVentaUrbanosVidaLabel);
-		valorVentaUrbanosVidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		valorVentaUrbanosVidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		valorVentaUrbanosVidaField.setInputVerifier(isNumber);
 		jComponentArray.add(valorVentaUrbanosVidaField);
 
@@ -662,25 +662,25 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 		setNoSet();
 		rceLabel = new JLabel(StringsConstants.PRODUCTO_RCE);
 		jLabelArray.add(rceLabel);
-		rceField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		rceField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		rceField.setInputVerifier(isRCE);
 		jComponentArray.add(rceField);
 
 		vidaLabel = new JLabel(StringsConstants.PRODUCTO_VIDA);
 		jLabelArray.add(vidaLabel);
-		vidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		vidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		vidaField.setInputVerifier(isVida);
 		jComponentArray.add(vidaField);
 
-		valorVentaVidaLabel = new JLabel(StringsConstants.PRODUCTO_VENTA_VIDA);
+		valorVentaVidaLabel = new JLabel(StringsConstants.SELL_VIDA);
 		jLabelArray.add(valorVentaVidaLabel);
-		valorVentaVidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		valorVentaVidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		valorVentaVidaField.setInputVerifier(isNumber);
 		jComponentArray.add(valorVentaVidaField);
 
 		valorVentaUrbanosVidaLabel = new JLabel(StringsConstants.PRODUCTO_URBANO_VENTA_VIDA);
 		jLabelArray.add(valorVentaUrbanosVidaLabel);
-		valorVentaUrbanosVidaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		valorVentaUrbanosVidaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		valorVentaUrbanosVidaField.setInputVerifier(isNumber);
 		jComponentArray.add(valorVentaUrbanosVidaField);
 
@@ -696,16 +696,16 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 	}
 
 	private void setNoSet() {
-		empresaLabel = new JLabel(StringsConstants.EMPRESA_NIT);
+		empresaLabel = new JLabel(StringsConstants.NIT);
 		jLabelArray.add(empresaLabel);
-		empresaField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		empresaField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		empresaField.setInputVerifier(isNumber);
 		empresaField.setInputVerifier(existEmpresa);
 		jComponentArray.add(empresaField);
 
 		empresaNameLabel = new JLabel(StringsConstants.EMPRESA_NOMBRE);
 		jLabelArray.add(empresaNameLabel);
-		empresaNameField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		empresaNameField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		empresaNameField.setEditable(false);
 		jComponentArray.add(empresaNameField);
 
@@ -716,7 +716,7 @@ public class EditProducto extends DialogAbstract implements ActionListener {
 
 		vehiculosUrbanosLabel = new JLabel(StringsConstants.PRODUCTO_URBAN_VEHICLES);
 		jLabelArray.add(vehiculosUrbanosLabel);
-		vehiculosUrbanosField = new JTextField(NumberConstants.ADDPRODUCTO_FIELD);
+		vehiculosUrbanosField = new JTextField(NumberConstants.PRODUCT_FIELD);
 		vehiculosUrbanosField.setText("0");
 		vehiculosUrbanosField.setInputVerifier(isNumber);
 		jComponentArray.add(vehiculosUrbanosField);

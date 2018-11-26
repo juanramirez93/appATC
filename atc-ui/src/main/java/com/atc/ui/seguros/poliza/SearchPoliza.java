@@ -41,7 +41,7 @@ public class SearchPoliza extends JPanel implements ActionListener {
 	private void initializeVariables() {
 		service = new SearchPolizaService();
 		buscarLabel = new JLabel(StringsConstants.SEARCH);
-		buscarField = new JTextField(NumberConstants.ADDPOLIZA_FIELD);
+		buscarField = new JTextField(NumberConstants.POLICY_FIELD);
 		buscarButton = new JButton(StringsConstants.SEARCH);
 		buscarButton.addActionListener(this);
 		deleteButton = new JButton("X");
@@ -55,7 +55,6 @@ public class SearchPoliza extends JPanel implements ActionListener {
 				parent.refreshTable();
 			} else {
 				String str = buscarField.getText();
-				System.out.println(str);
 				polizas = service.search(str);
 				parent.refreshTable(polizas);
 			}

@@ -252,7 +252,7 @@ public class AddUsuario extends DialogAbstract implements ActionListener {
 			}
 
 		} else {
-			JOptionPane.showMessageDialog(this, StringsConstants.DATOS_INCOMPLETOS_MESSAGE);
+			JOptionPane.showMessageDialog(this, StringsConstants.INCOMPLETE_DATA_MESSAGE);
 		}
 	}
 

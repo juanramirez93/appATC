@@ -18,8 +18,7 @@ public class TableModelStock extends AbstractTableModel {
 	private SimpleDateFormat formatDate = new SimpleDateFormat("dd-MMM-yyyy");
 
 	private List<Stock> stock;
-	private String[] columns = { "Fecha", "Producto", "Incial", "Final", "Cantidad", "Restantes" };
-
+	private String[] columns = { "Fecha", "Producto", "Incial", "Final", "Cantidad", "Restantes", "Siguiente" };
 	public TableModelStock() {
 		this.stock = new ArrayList<Stock>();
 	}
@@ -48,6 +47,11 @@ public class TableModelStock extends AbstractTableModel {
 			return inventario.getFin() - inventario.getInicio() + 1;
 		case 5:
 			return inventario.getRestantes();
+			case 6:
+				if(inventario.getProximo() > inventario.getFin()){
+					return "-";
+				}
+				return inventario.getProximo();
 		}
 		return null;
 	}

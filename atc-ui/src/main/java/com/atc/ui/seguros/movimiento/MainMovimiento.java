@@ -28,7 +28,7 @@ public class MainMovimiento extends FrameAbstract implements ActionListener {
 	private JButton editarButton;
 
 	public MainMovimiento() {
-		super(StringsConstants.MAINMOVIMIENTO_TITULO);
+		super(StringsConstants.MOVEMENT_TITLE);
 		initialize();
 		initializeVariables();
 		constructLayout();
@@ -73,7 +73,7 @@ public class MainMovimiento extends FrameAbstract implements ActionListener {
 		this.detallesButton = new JButton(StringsConstants.VER_DETALLE);
 		this.detallesButton.addActionListener(this);
 
-		this.editarButton = new JButton(StringsConstants.EDITAR);
+		this.editarButton = new JButton(StringsConstants.EDIT);
 		this.editarButton.addActionListener(this);
 
 		this.ingresarButton = new JButton(StringsConstants.AGREGAR_MOVIMIENTO);
@@ -92,7 +92,7 @@ public class MainMovimiento extends FrameAbstract implements ActionListener {
 				AddMovimiento addMovimiento = new AddMovimiento(this);
 				addMovimiento.setVisible(true);
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		} else if (event.getSource() == this.atrasButton) {
 			setVisible(false);
@@ -105,7 +105,7 @@ public class MainMovimiento extends FrameAbstract implements ActionListener {
 					JOptionPane.showMessageDialog(this, StringsConstants.SELECT_REGISTER);
 				}
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		} else if (event.getSource() == this.editarButton) {
 			if (userSession.getPermisos().getMovimiento() % EDITAR == 0) {
@@ -117,7 +117,7 @@ public class MainMovimiento extends FrameAbstract implements ActionListener {
 					JOptionPane.showMessageDialog(this, StringsConstants.SELECT_REGISTER);
 				}
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		}
 	}

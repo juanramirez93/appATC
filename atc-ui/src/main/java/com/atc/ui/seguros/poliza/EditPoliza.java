@@ -164,11 +164,11 @@ public class EditPoliza extends DialogAbstract implements ActionListener {
 		guardarButton = new JButton(StringsConstants.SAVE);
 		guardarButton.addActionListener(this);
 
-		ramoLabel = new JLabel(StringsConstants.POLIZA_RAMO);
+		ramoLabel = new JLabel(StringsConstants.BRANCH);
 		ramo = new JComboBox<String>(new String[] { "", "RCE", "Transporte", "Vida" });
 
-		numeroLabel = new JLabel(StringsConstants.POLIZA_NUMERO);
-		numero = new JTextField(NumberConstants.ADDPOLIZA_FIELD);
+		numeroLabel = new JLabel(StringsConstants.NUMBER_POLICY);
+		numero = new JTextField(NumberConstants.POLICY_FIELD);
 		numero.setInputVerifier(isNumber);
 
 		jLabelArray = new ArrayList<JLabel>();
@@ -255,7 +255,7 @@ public class EditPoliza extends DialogAbstract implements ActionListener {
 			}
 
 		} else {
-			JOptionPane.showMessageDialog(null, StringsConstants.DATOS_INCOMPLETOS_MESSAGE, StringsConstants.APP_NAME,
+			JOptionPane.showMessageDialog(null, StringsConstants.INCOMPLETE_DATA_MESSAGE, StringsConstants.APP_NAME,
 					JOptionPane.ERROR_MESSAGE);
 		}
 
@@ -268,9 +268,9 @@ public class EditPoliza extends DialogAbstract implements ActionListener {
 	private void setVida() {
 		setNoSet();
 
-		valorUrbanosLabel = new JLabel(StringsConstants.POLIZA_URBANOS_COSTO);
+		valorUrbanosLabel = new JLabel(StringsConstants.URBAN_COST);
 		jLabelArray.add(valorUrbanosLabel);
-		valorUrbanos = new JTextField(NumberConstants.ADDPOLIZA_FIELD);
+		valorUrbanos = new JTextField(NumberConstants.POLICY_FIELD);
 		valorUrbanos.setInputVerifier(isNumber);
 		jComponentArray.add(valorUrbanos);
 	}
@@ -278,15 +278,15 @@ public class EditPoliza extends DialogAbstract implements ActionListener {
 	private void setRCE() {
 		setNoSet();
 
-		valorUrbanosLabel = new JLabel(StringsConstants.POLIZA_URBANOS_COSTO);
+		valorUrbanosLabel = new JLabel(StringsConstants.URBAN_COST);
 		jLabelArray.add(valorUrbanosLabel);
-		valorUrbanos = new JTextField(NumberConstants.ADDPOLIZA_FIELD);
+		valorUrbanos = new JTextField(NumberConstants.POLICY_FIELD);
 		valorUrbanos.setInputVerifier(isNumber);
 		jComponentArray.add(valorUrbanos);
 
-		comisionATCLabel = new JLabel(StringsConstants.POLIZA_COMISION);
+		comisionATCLabel = new JLabel(StringsConstants.COMMISSION);
 		jLabelArray.add(comisionATCLabel);
-		comisionATC = new JTextField(NumberConstants.ADDPOLIZA_FIELD);
+		comisionATC = new JTextField(NumberConstants.POLICY_FIELD);
 		comisionATC.setInputVerifier(isPercent);
 		jComponentArray.add(comisionATC);
 
@@ -295,29 +295,29 @@ public class EditPoliza extends DialogAbstract implements ActionListener {
 	private void setTransporte() {
 		setNoSet();
 
-		comisionATCLabel = new JLabel(StringsConstants.POLIZA_COMISION);
+		comisionATCLabel = new JLabel(StringsConstants.COMMISSION);
 		jLabelArray.add(comisionATCLabel);
-		comisionATC = new JTextField(NumberConstants.ADDPOLIZA_FIELD);
+		comisionATC = new JTextField(NumberConstants.POLICY_FIELD);
 		comisionATC.setInputVerifier(isPercent);
 		jComponentArray.add(comisionATC);
 	}
 
 	private void setNoSet() {
-		inicioLabel = new JLabel(StringsConstants.POLIZA_INICIO_VIGENCIA);
+		inicioLabel = new JLabel(StringsConstants.START_VALIDITY);
 		jLabelArray.add(inicioLabel);
 		inicio = new JDateChooser();
 		inicio.setInputVerifier(isDate);
 		jComponentArray.add(inicio);
 
-		finLabel = new JLabel(StringsConstants.POLIZA_FIN_VIGENCIA);
+		finLabel = new JLabel(StringsConstants.END_VALIDITY);
 		jLabelArray.add(finLabel);
 		fin = new JDateChooser();
 		fin.setInputVerifier(isDate);
 		jComponentArray.add(fin);
 
-		valorLabel = new JLabel(StringsConstants.POLIZA_COSTO);
+		valorLabel = new JLabel(StringsConstants.COST);
 		jLabelArray.add(valorLabel);
-		costo = new JTextField(NumberConstants.ADDPOLIZA_FIELD);
+		costo = new JTextField(NumberConstants.POLICY_FIELD);
 		costo.setInputVerifier(isNumber);
 		jComponentArray.add(costo);
 	}

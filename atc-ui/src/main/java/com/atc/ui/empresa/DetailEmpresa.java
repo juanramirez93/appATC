@@ -59,7 +59,7 @@ public class DetailEmpresa extends DialogAbstract implements ActionListener {
 		dataPanel.setBorder(BorderFactory.createTitledBorder(StringsConstants.DATOS));
 		String datosStr = "";
 
-		datosStr += StringsConstants.EMPRESA_NIT + ": " + formatID.format(empresa.getNit()) + "-" + empresa.getDigito()
+		datosStr += StringsConstants.NIT + ": " + formatID.format(empresa.getNit()) + "-" + empresa.getDigito()
 				+ "\n";
 		datosStr += StringsConstants.EMPRESA_NOMBRE + ": " + empresa.getRazonSocial() + "\n";
 		datosStr += StringsConstants.EMPRESA_SIGLAS + ": " + empresa.getSiglas() + "\n";

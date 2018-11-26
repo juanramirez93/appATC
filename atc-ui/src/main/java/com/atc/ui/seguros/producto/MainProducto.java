@@ -69,13 +69,13 @@ public class MainProducto extends FrameAbstract implements ActionListener {
 		this.atrasButton.addActionListener(this);
 		this.detallesButton = new JButton(StringsConstants.VER_DETALLE);
 		this.detallesButton.addActionListener(this);
-		this.editarButton = new JButton(StringsConstants.EDITAR);
+		this.editarButton = new JButton(StringsConstants.EDIT);
 		this.editarButton.addActionListener(this);
 		this.searchPanel = new SearchProducto(this);
 	}
 
 	private void initialize() {
-		setSize(NumberConstants.MAINPRODUCTO_WIDTH, NumberConstants.MAINPRODUCTO_HEIGHT);
+		setSize(NumberConstants.MAINPRODUCT_WIDTH, NumberConstants.MAINPRODUCT_HEIGHT);
 		setLocationRelativeTo(null);
 
 	}
@@ -85,7 +85,7 @@ public class MainProducto extends FrameAbstract implements ActionListener {
 			if (userSession.getPermisos().getProducto() % AGREGAR == 0) {
 				new AddProducto(this);
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		} else if (event.getSource() == this.atrasButton) {
 			setVisible(false);
@@ -97,7 +97,7 @@ public class MainProducto extends FrameAbstract implements ActionListener {
 					new DetailProducto(this, mainTable.getSelected());
 				}
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		} else if (event.getSource() == this.editarButton) {
 			if (userSession.getPermisos().getProducto() % EDITAR == 0) {
@@ -107,7 +107,7 @@ public class MainProducto extends FrameAbstract implements ActionListener {
 					new EditProducto(this, mainTable.getSelected());
 				}
 			} else {
-				JOptionPane.showMessageDialog(this, StringsConstants.NO_PERMISO);
+				JOptionPane.showMessageDialog(this, StringsConstants.NOT_PERMIT);
 			}
 		}
 	}

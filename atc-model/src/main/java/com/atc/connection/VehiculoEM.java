@@ -10,7 +10,7 @@ public class VehiculoEM extends EM implements AbstractEntityManager<Vehiculo> {
 	public List<Vehiculo> getAll() {
 		open();
 		TypedQuery<Vehiculo> query = EntityManagerHandler.INSTANCE.getEntityManager()
-				.createQuery("SELECT v FROM Vehiculo v ORDER BY placa ASC", Vehiculo.class);
+				.createQuery("SELECT v FROM Vehiculo v ORDER BY v.placa ASC", Vehiculo.class);
 		List<Vehiculo> vehiculos = query.getResultList();
 		return vehiculos;
 	}

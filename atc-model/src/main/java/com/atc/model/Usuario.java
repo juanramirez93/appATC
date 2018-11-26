@@ -12,10 +12,10 @@ public class Usuario {
 	private int id;
 	private String user;
 	private String password;
-	@OneToOne
+	@OneToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "ID_EMPLEADO")
 	private Empleado empleado;
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "ID_PERMISOS")
 	private Permisos permisos;
 

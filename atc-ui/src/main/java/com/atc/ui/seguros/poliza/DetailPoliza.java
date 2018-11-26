@@ -43,7 +43,7 @@ public class DetailPoliza extends DialogAbstract implements ActionListener {
 		BorderLayout layout = new BorderLayout();
 
 		setLayout(layout);
-		setSize(NumberConstants.DETAILPOLIZA_WIDTH, NumberConstants.DETAILPOLIZA_HEIGHT);
+		setSize(NumberConstants.DETAILPOLICY_WIDTH, NumberConstants.DETAILPOLIZA_HEIGHT);
 		setLocationRelativeTo(parent);
 		setDataPanel();
 		setButtonPanel();
@@ -64,23 +64,23 @@ public class DetailPoliza extends DialogAbstract implements ActionListener {
 		dataPanel.setBorder(BorderFactory.createTitledBorder(StringsConstants.DATOS));
 		String datosStr = "";
 
-		datosStr += StringsConstants.POLIZA_NUMERO + ": " + poliza.getNumero() + "\n";
-		datosStr += StringsConstants.POLIZA_RAMO + ": " + poliza.getRamo() + "\n";
-		datosStr += StringsConstants.POLIZA_INICIO_VIGENCIA + ": " + formatDate.format(poliza.getInicio()) + "\n";
-		datosStr += StringsConstants.POLIZA_FIN_VIGENCIA + ": " + formatDate.format(poliza.getFin()) + "\n";
+		datosStr += StringsConstants.NUMBER_POLICY + ": " + poliza.getNumero() + "\n";
+		datosStr += StringsConstants.BRANCH + ": " + poliza.getRamo() + "\n";
+		datosStr += StringsConstants.START_VALIDITY + ": " + formatDate.format(poliza.getInicio()) + "\n";
+		datosStr += StringsConstants.END_VALIDITY + ": " + formatDate.format(poliza.getFin()) + "\n";
 		datosStr += StringsConstants.POLIZA_VALOR + ": " + formatMoney.format(poliza.getValor()) + "\n";
 
 		if (poliza.getRamo().equals("RCE")) {
 			RCE rce = (RCE) poliza;
-			datosStr += StringsConstants.POLIZA_URBANOS_COSTO + ": " + formatMoney.format(rce.getValorUrbanos()) + "\n";
-			datosStr += StringsConstants.POLIZA_COMISION + ": " + formatPercent.format(rce.getComisionATC()) + "\n";
+			datosStr += StringsConstants.URBAN_COST + ": " + formatMoney.format(rce.getValorUrbanos()) + "\n";
+			datosStr += StringsConstants.COMMISSION + ": " + formatPercent.format(rce.getComisionATC()) + "\n";
 		} else if (poliza.getRamo().equals("Transporte")) {
 			Transporte transporte = (Transporte) poliza;
-			datosStr += StringsConstants.POLIZA_COMISION + ": " + formatPercent.format(transporte.getComisionATC())
+			datosStr += StringsConstants.COMMISSION + ": " + formatPercent.format(transporte.getComisionATC())
 					+ "\n";
 		} else if (poliza.getRamo().equals("Vida")) {
 			Vida vida = (Vida) poliza;
-			datosStr += StringsConstants.POLIZA_URBANOS_COSTO + ": " + formatMoney.format(vida.getValorUrbanos()) + "\n";
+			datosStr += StringsConstants.URBAN_COST + ": " + formatMoney.format(vida.getValorUrbanos()) + "\n";
 			
 		}
 		datos.setText(datosStr);
